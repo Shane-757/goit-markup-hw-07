@@ -1,0 +1,28 @@
+@import 'Sass/utils/variable';
+@import 'Sass/components/header';
+@import 'Sass/components/hero';
+@import 'Sass/components/featrues';
+@import 'Sass/components/job';
+@import 'Sass/components/team';
+@import 'Sass/components/customers';
+@import 'Sass/components/portfolio';
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,36 @@
+.job{
+    padding-bottom: 94px;
+
+&__title{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        color: $primary-title-color;
+        text-align: center;
+        margin-bottom: 50px;
+}
+&__list{
+    display: flex;
+}
+&__item:not(:last-child){
+    margin-right: 30px;
+}
+&__item{
+    position: relative;
+}
+&__item > .label{
+    position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 28px;
+        padding-bottom: 27px;
+        color: $white-color;
+        background-color: $label-background-color;
+}
+}
