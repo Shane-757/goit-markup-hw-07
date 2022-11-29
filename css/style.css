@@ -815,10 +815,10 @@ img{
     padding: 12px 16px;
     transition: border-color var(--time) var(--time-function);
 }
+
 .textarea-modal-input:hover,
 .textarea-modal-input:focus{
-    border-color: var(--accent-color);
-    outline: none;
+    border-color: var(--accent-color); 
 }
 
 .modal-label:not(:last-child){
@@ -828,7 +828,6 @@ img{
 .modal-input:hover,
 .modal-input:focus{
     border-color: var(--accent-color);
-    outline: none;
 }
 
 .modal-label:hover .modal-icon,
