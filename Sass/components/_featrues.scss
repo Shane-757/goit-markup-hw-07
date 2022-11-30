@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-&__title{
+.features__title{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -14,30 +14,33 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-&__list{
+.features__list{
     display: flex;
     flex-wrap: wrap;
 }
-&__item:not(:last-child){
+.features__item {
+    width: 270px;
+}
+.features__item:not(:last-child){
     margin-right: 30px;
 }
-&__image{
+.features__image{
     width: 270px;
     height: 120px;
-    background: $white-color;
+    background: $image-background;
     border-radius: 4px;
     margin-bottom: 30px;
     padding-bottom: 25px;
     padding-top: 25px;
 }
-&__item-title{
+.features__item-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--primary-title-color);
+    color: $primary-title-color;
     margin-bottom: 10px;
 }
-&__item-text{
+.features__item-text{
     font-size: 14px;
     line-height: 1.71;
 }

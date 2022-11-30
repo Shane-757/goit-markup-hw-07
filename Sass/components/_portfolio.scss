@@ -1,13 +1,34 @@
+.card-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay-text {
+    color: $white-color;
+    background-color: $portfolio-card-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform $time $time-function;
+}
 .portfolio{
     padding-bottom: 94px;
         padding-top: 94px;
-.navigation-button{
+
+&__navigation-button{
     font-family: Roboto;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
         text-align: center;
-        color: $portfolio-button-color;
+        color: $modal-icon;
         cursor: pointer;
         background: $portfolio-background-color;
         padding: 6px 26px;
@@ -16,10 +37,59 @@
         transition: color $time $time-function,
             background-color $time $time-function;
 }
-.navigation-button:hover,
-.navigation-button:focus {
+&__navigation-button:hover,
+&__navigation-button:focus {
     background-color: $accent-color;
     color: $white-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+&__filters-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+&__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--card-gap));
+    margin-left: calc(-1 * var(--card-gap));
+}
+&__filters-item:not(:last-child) {
+    margin-right: 8px;
+    transition: color $time $time-function;
+}
+&__list-item:hover,
+&__list-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+&__list-item{
+    flex-basis: calc(100%/3 - $portfolio-card-gap);
+    margin-left: $portfolio-card-gap;
+    margin-top: $portfolio-card-gap;
+}
+&__list-item:hover .card-overlay-text,
+&__list-item:focus .card-overlay-text{
+    transform: translateY(0%);
+    cursor: pointer;
+}
+&__description{
+    border-bottom: 1px solid $portfolio-background-color;
+    border-left: 1px solid $portfolio-background-color;
+    border-right: 1px solid $portfolio-background-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    }
+&__list-header{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $primary-title-color;
+}
+&__list-text {
+    font-size: 16px;
+    line-height: 1.87;
 }
 }
