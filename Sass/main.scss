@@ -1,53 +1,12 @@
 @import './utils/variable';
-@import './components/header';
-@import './components/hero';
-@import './components/featrues';
-@import './components/job';
-@import './components/team';
-@import './components/customers';
-@import './components/portfolio';
-@import './components/footer';
-@import './components/modal';
-ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-a{
-    text-decoration: none;
-}
-
-body {
-    font-family: Roboto, sans-serif;
-    color: var(--primary-text-color);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    margin: 0;
-}
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-p,h1,h2,h3,h4,h5,h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/featrues';
+@import './layouts/job';
+@import './layouts/team';
+@import './layouts/customers';
+@import './layouts/portfolio';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './base/container';
+@import './base/global';

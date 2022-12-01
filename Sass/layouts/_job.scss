@@ -1,7 +1,7 @@
 .job{
     padding-bottom: 94px;
 
-&__title{
+.job__title{
     font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
@@ -9,16 +9,17 @@
         text-align: center;
         margin-bottom: 50px;
 }
-&__list{
+.job__list{
     display: flex;
 }
-&__item:not(:last-child){
-    margin-right: 30px;
-}
-&__item{
+.job__item {
     position: relative;
-}
-&__item > .label{
+    &:not(:last-child){
+    margin-right: 30px;
+}}
+
+
+.job__item > .label{
     position: absolute;
         font-weight: 700;
         font-size: 14px;

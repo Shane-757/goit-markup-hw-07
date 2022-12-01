@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-&__logo{
+.footer__logo{
     font-weight: 700;
     font-size: 26px;
     font-family: Raleway;
@@ -12,7 +12,7 @@
      margin-bottom: 9px;
     display: block;
 }
-&__location{
+.footer__location{
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
@@ -21,15 +21,15 @@
     margin-bottom: 2px;
     display: block;
     transition: color $time $time-function;
-}
-&__location:hover,
-&__location:hover {
+    &:hover,
+    &:hover {
     color: $accent-color;
-}
-&__item:not(:last-child) {
+}}
+
+.footer__item:not(:last-child) {
     margin-bottom: 2px;
 }
-&__item-link{
+.footer__item-link{
     font-size: 14px;
     color: $white-color;
     opacity: .6;
@@ -37,12 +37,12 @@
     text-decoration: none;
     font-style: normal;
     transition: color $time $time-function;
-}
-&__item-link:hover,
-&__item-link:focus {
+    &:hover,
+    &:focus {
     color: $accent-color;
-}
-&__middle-title{
+}}
+
+.footer__middle-title{
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
@@ -50,20 +50,20 @@
     color: $white-color;
     margin-bottom: 20px;
 }
-&__container{
+.footer__container{
     display: flex;
     align-items: baseline;
 }
-&__left{
+.footer__left{
     margin-right: 70px;
 }
-&__middle{
+.footer__middle{
     margin-right: 93px;
 }
-&__social-media{
+.footer__social-media{
     display: flex;
 }
-&__socials-link{
+.footer__socials-link{
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -73,24 +73,24 @@
     justify-content: center;
     background-color: $footer-social-link-background;
     transition: color $time $time-function;
-}
-&__socials-link:hover,
-&__socials-link:focus{
+    &:hover,
+    &:focus{
     background-color: $accent-color;
-}
-&__socials-link-icon {
+}}
+
+.footer__socials-link-icon {
     cursor: pointer;
 }
 
-&__form {
+.footer__form {
     display: flex;
 }
 
-&__form-label {
+.footer__form-label {
     margin-right: 12px;
 }
 
-&__input-title {
+.footer__input-title {
     font-size: 14px;
     line-height: calc(16/14);
     color: $white-color;
@@ -98,7 +98,7 @@
 
 }
 
-&__input {
+.footer__input {
     padding: 15px;
     width: 358px;
     height: 50px;
@@ -110,14 +110,12 @@
     transition: color $time $time-function;
     transition: background-color $time $time-function;
     transition: border-color $time $time-function;
-}
-
-&__input:hover,
-&__input:focus {
+    &:hover,
+    &:focus {
     color: $white-color;
     background-color: transparent;
     border-color: $white-color;
-}
+}}
 
 &__button {
     border: none;
@@ -132,14 +130,12 @@
     cursor: pointer;
     font-family: 'Roboto';
     transition: background-color $time $time-function;
-}
+    &:hover
+    &:focus {
+    background-color: $button-hover;
+}}
 
 .send-icon {
     margin-left: 30px;
-}
-
-&__button:hover,
-&__button:focus {
-    background-color: $button-hover;
 }
 }
