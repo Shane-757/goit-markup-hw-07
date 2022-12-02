@@ -51,8 +51,8 @@
 .portfolio__list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--card-gap));
-    margin-left: calc(-1 * var(--card-gap));
+    margin-top: calc(-1 * $portfolio-card-gap);
+    margin-left: calc(-1 * $portfolio-card-gap);
 }
 .portfolio__filters-item:not(:last-child) {
     margin-right: 8px;
