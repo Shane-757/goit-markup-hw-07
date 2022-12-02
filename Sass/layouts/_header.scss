@@ -1,7 +1,7 @@
 .header {
     background: $header-background;
     border-bottom: 1px solid #ECECEC;
-    display: flex;
+    display: flex;}
 
     .header__container {
         display: flex;
@@ -90,4 +90,3 @@
         margin-right: 10px;
         fill: currentColor;
     }
-}
