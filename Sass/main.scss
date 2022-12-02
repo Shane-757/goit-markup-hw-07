@@ -1,13 +1,13 @@
-@import './base/container';
-@import './base/global';
-@import './utils/variable';
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/featrues';
-@import './layouts/job';
-@import './layouts/team';
-@import './layouts/customers';
-@import './layouts/portfolio';
-@import './layouts/footer';
-@import './layouts/modal';
+@use './base/container';
+@use './base/global';
+@use './utils/variable';
+@use './layouts/header';
+@use './layouts/hero';
+@use './layouts/featrues';
+@use './layouts/job';
+@use './layouts/team';
+@use './layouts/customers';
+@use './layouts/portfolio';
+@use './layouts/footer';
+@use './layouts/modal';
 

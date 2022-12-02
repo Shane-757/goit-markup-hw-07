@@ -1,5 +1,5 @@
 .footer{
-    background-color: $background;
+    background-color: utils.$background;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -7,7 +7,7 @@
     font-weight: 700;
     font-size: 26px;
     font-family: Raleway;
-    color: $accent-color;
+    color: utils.$accent-color;
     line-height: 1.19;
      margin-bottom: 9px;
     display: block;
@@ -17,10 +17,10 @@
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
-    color: $white-color;
+    color: utils.$white-color;
     margin-bottom: 2px;
     display: block;
-    transition: color $time $time-function;
+    transition: color utils.$time $time-function;
     &:hover,
     &:hover {
     color: $accent-color;
@@ -31,15 +31,15 @@
 }
 .footer__item-link{
     font-size: 14px;
-    color: $white-color;
+    color: utils.$white-color;
     opacity: .6;
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
-    transition: color $time $time-function;
+    transition: color utils.$time utils.$time-function;
     &:hover,
     &:focus {
-    color: $accent-color;
+    color: utils.$accent-color;
 }}
 
 .footer__middle-title{
@@ -47,7 +47,7 @@
     line-height: 1.14;
     font-weight: 700;
     font-family: Roboto;
-    color: $white-color;
+    color: utils.$white-color;
     margin-bottom: 20px;
 }
 .footer__container{
@@ -71,11 +71,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $footer-social-link-background;
-    transition: color $time $time-function;
+    background-color: utils.$footer-social-link-background;
+    transition: color utils.$time utils.$time-function;
     &:hover,
     &:focus{
-    background-color: $accent-color;
+    background-color: utils.$accent-color;
 }}
 
 .footer__socials-link-icon {
@@ -93,7 +93,7 @@
 .footer__input-title {
     font-size: 14px;
     line-height: calc(16/14);
-    color: $white-color;
+    color: utils.$white-color;
     margin-bottom: 20px;
 
 }
@@ -107,14 +107,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     outline: none;
-    transition: color $time $time-function;
-    transition: background-color $time $time-function;
-    transition: border-color $time $time-function;
+    transition: color utils.$time utils.$time-function;
+    transition: background-color utils.$time utils.$time-function;
+    transition: border-color utils.$time utils.$time-function;
     &:hover,
     &:focus {
-    color: $white-color;
+    color: utils.$white-color;
     background-color: transparent;
-    border-color: $white-color;
+    border-color: utils.$white-color;
 }}
 
 &__button {
@@ -124,15 +124,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:$accent-color;
-    color: $white-color;
+    background-color:utils.$accent-color;
+    color: utils.$white-color;
     font-size: 16px;
     cursor: pointer;
     font-family: 'Roboto';
-    transition: background-color $time $time-function;
+    transition: background-color utils.$time utils.$time-function;
     &:hover
     &:focus {
-    background-color: $button-hover;
+    background-color: utils.$button-hover;
 }}
 
 .send-icon {

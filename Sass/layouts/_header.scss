@@ -1,19 +1,19 @@
 .header {
-    background: $header-background;
+    background: utils.$header-background;
     border-bottom: 1px solid #ECECEC;
     display: flex;}
 
-    .header__container {
+.header__container {
         display: flex;
     }
 
-    .header__navigation {
+.header__navigation {
         display: flex;
         align-items: center;
     }
 
-    .header__logo {
-        color: $accent-color;
+.header__logo {
+        color: utils.$accent-color;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -21,16 +21,16 @@
         margin-right: 97px;
     }
 
-    .header__list-link {
+.header__list-link {
         display: flex;
     }
 
-    .header__item:not(:last-child) {
+.header__item:not(:last-child) {
         margin-right: 50px;
     }
 
-    .header__link {
-        color: $primary-title-color;
+.header__link {
+        color: utils.$primary-title-color;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -38,15 +38,15 @@
         padding-top: 32px;
         padding-bottom: 32px;
         display: block;
-        transition: color $time $time-function;
+        transition: color utils.$time utils.$time-function;
         &:hover,
         &:focus{ 
-        color: $accent-color;
+        color: utils.$accent-color;
         text-decoration: underline;
     }}
 
-    .current {
-        color: $accent-color;
+.current {
+        color: utils.$accent-color;
         position: relative;
         display: inline-block;
         &::after {
@@ -57,21 +57,21 @@
         border-radius: 2px;
         left: 0;
         bottom: 0;
-        background-color: $accent-color;
-        background: $accent-color;
+        background-color: utils.$accent-color;
+        background: utils.$accent-color;
     }}
 
-    .header__list-contact {
+.header__list-contact {
         display: flex;
         margin-left: auto;
     }
 
-    .header__item-contact:not(:last-child) {
+.header__item-contact:not(:last-child) {
         margin-right: 50px;
     }
 
-    .header__item-contact-link {
-        color: $primary-text-color;
+.header__item-contact-link {
+        color: utils.$primary-text-color;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -80,13 +80,13 @@
         padding-bottom: 32px;
         display: flex;
         align-items: center;
-        transition: color $time $time-function;
+        transition: color utils.$time $time-function;
         &:hover,
         &:focus {
-        color: $accent-color;
+        color: utils.$accent-color;
     }}
 
-    .header__item-contact-icon {
+.header__item-contact-icon {
         margin-right: 10px;
         fill: currentColor;
     }
