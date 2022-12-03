@@ -1,5 +1,5 @@
 .header {
-    background: utils.$header-background;
+    background: utils.$colors, 'header-background';
     border-bottom: 1px solid #ECECEC;
     display: flex;}
 
@@ -13,7 +13,7 @@
     }
 
 .header__logo {
-        color: utils.$accent-color;
+        color: utils.$colors, 'accent-color';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -30,7 +30,7 @@
     }
 
 .header__link {
-        color: utils.$primary-title-color;
+        color: utils.$colors, 'primary-title-color';
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -38,15 +38,15 @@
         padding-top: 32px;
         padding-bottom: 32px;
         display: block;
-        transition: color utils.$time utils.$time-function;
+        transition: color utils.$colors, 'time' utils.$colors, 'time-function';
         &:hover,
         &:focus{ 
-        color: utils.$accent-color;
+        color: utils.$colors, 'accent-color';
         text-decoration: underline;
     }}
 
 .current {
-        color: utils.$accent-color;
+        color: utils.$colors, 'accent-color';
         position: relative;
         display: inline-block;
         &::after {
@@ -57,8 +57,8 @@
         border-radius: 2px;
         left: 0;
         bottom: 0;
-        background-color: utils.$accent-color;
-        background: utils.$accent-color;
+        background-color: utils.$colors, 'accent-color';
+        background: utils.$colors, 'accent-color';
     }}
 
 .header__list-contact {
@@ -71,7 +71,7 @@
     }
 
 .header__item-contact-link {
-        color: utils.$primary-text-color;
+        color: utils.$colors, 'primary-text-color';
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -80,10 +80,10 @@
         padding-bottom: 32px;
         display: flex;
         align-items: center;
-        transition: color utils.$time $time-function;
+        transition: color utils.$colors, 'time' $colors, 'time-function';
         &:hover,
         &:focus {
-        color: utils.$accent-color;
+        color: utils.$colors, 'accent-color';
     }}
 
 .header__item-contact-icon {

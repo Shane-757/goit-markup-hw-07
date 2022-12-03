@@ -4,8 +4,8 @@
 }
 
 .card-overlay-text {
-    color: utils.$white-color;
-    background-color: utils.$portfolio-card-overlay;
+    color: utils.$colors, 'white-color';
+    background-color: utils.$colors, 'portfolio-card-overlay';
     position: absolute;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     padding: 30px;
     overflow: auto;
     transform: translateY(100%);
-    transition: transform utils.$time utils.$time-function;
+    transition: transform utils.$colors, 'time' utils.$colors, 'time-function';
 }
 .portfolio{
     padding-bottom: 94px;
@@ -28,18 +28,18 @@
         font-size: 16px;
         line-height: 1.62;
         text-align: center;
-        color: utils.$modal-icon;
+        color: utils.$colors, 'modal-icon';
         cursor: pointer;
-        background: utils.$portfolio-background-color;
+        background: utils.$colors, 'portfolio-background-color';
         padding: 6px 26px;
         border-style: none;
         border-radius: 4px;
-        transition: color utils.$time $time-function,
-        background-color utils.$time utils.$time-function;
+        transition: color utils.$colors, 'time' $colors, 'time-function',
+        background-color utils.$colors, 'time' utils.$colors, 'time-function';
         &:hover,
         &:focus {
-        background-color: utils.$accent-color;
-        color: utils.$white-color;
+        background-color: utils.$colors, 'accent-color';
+        color: utils.$colors, 'white-color';
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }}
 
@@ -51,18 +51,18 @@
 .portfolio__list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * utils.$portfolio-card-gap);
-    margin-left: calc(-1 * utils.$portfolio-card-gap);
+    margin-top: calc(-1 * utils.$colors, 'portfolio-card-gap');
+    margin-left: calc(-1 * utils.$colors, 'portfolio-card-gap');
 }
 .portfolio__filters-item:not(:last-child) {
     margin-right: 8px;
-    transition: color utils.$time utils.$time-function;
+    transition: color utils.$colors, 'time' utils.$colors, 'time-function';
 }
 
 .portfolio__list-item{
-    flex-basis: calc(100%/3 - utils.$portfolio-card-gap);
-    margin-left: utils.$portfolio-card-gap;
-    margin-top: utils.$portfolio-card-gap;
+    flex-basis: calc(100%/3 - utils.$colors, 'portfolio-card-gap');
+    margin-left: utils.$colors, 'portfolio-card-gap';
+    margin-top: utils.$colors, 'portfolio-card-gap';
     &:hover,
     &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -73,9 +73,9 @@
         }}}
 
 .portfolio__description{
-    border-bottom: 1px solid utils.$portfolio-background-color;
-    border-left: 1px solid utils.$portfolio-background-color;
-    border-right: 1px solid utils.$portfolio-background-color;
+    border-bottom: 1px solid utils.$colors, 'portfolio-background-color';
+    border-left: 1px solid utils.$colors, 'portfolio-background-color';
+    border-right: 1px solid utils.$colors, 'portfolio-background-color';
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;
@@ -86,7 +86,7 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: utils.$primary-title-color;
+        color: utils.$colors, 'primary-title-color';
 }
 .portfolio__list-text {
     font-size: 16px;

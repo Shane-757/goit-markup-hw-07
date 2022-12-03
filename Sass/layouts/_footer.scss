@@ -1,5 +1,5 @@
 .footer{
-    background-color: utils.$background;
+    background-color: utils.$colors 'background';
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -7,7 +7,7 @@
     font-weight: 700;
     font-size: 26px;
     font-family: Raleway;
-    color: utils.$accent-color;
+    color: utils.$colors 'accent-color';
     line-height: 1.19;
      margin-bottom: 9px;
     display: block;
@@ -17,13 +17,13 @@
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
-    color: utils.$white-color;
+    color: utils.$colors 'white-color';
     margin-bottom: 2px;
     display: block;
-    transition: color utils.$time $time-function;
+    transition: color utils.$colors 'time' $colors 'time-function';
     &:hover,
     &:hover {
-    color: $accent-color;
+    color: $colors 'accent-color';
 }}
 
 .footer__item:not(:last-child) {
@@ -31,15 +31,15 @@
 }
 .footer__item-link{
     font-size: 14px;
-    color: utils.$white-color;
+    color: utils.$colors 'white-color';
     opacity: .6;
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
-    transition: color utils.$time utils.$time-function;
+    transition: color utils.$colors 'time' utils.$colors 'time-function';
     &:hover,
     &:focus {
-    color: utils.$accent-color;
+    color: utils.$colors 'accent-color';
 }}
 
 .footer__middle-title{
@@ -47,7 +47,7 @@
     line-height: 1.14;
     font-weight: 700;
     font-family: Roboto;
-    color: utils.$white-color;
+    color: utils.$colors 'white-color';
     margin-bottom: 20px;
 }
 .footer__container{
@@ -71,11 +71,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: utils.$footer-social-link-background;
-    transition: color utils.$time utils.$time-function;
+    background-color: utils.$colors 'footer-social-link-background';
+    transition: color utils.$colors 'time' utils.$colors 'time-function';
     &:hover,
     &:focus{
-    background-color: utils.$accent-color;
+    background-color: utils.$colors 'accent-color';
 }}
 
 .footer__socials-link-icon {
@@ -93,7 +93,7 @@
 .footer__input-title {
     font-size: 14px;
     line-height: calc(16/14);
-    color: utils.$white-color;
+    color: utils.$colors 'white-color';
     margin-bottom: 20px;
 
 }
@@ -107,14 +107,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     outline: none;
-    transition: color utils.$time utils.$time-function;
-    transition: background-color utils.$time utils.$time-function;
-    transition: border-color utils.$time utils.$time-function;
+    transition: color utils.$colors 'time' utils.$colors 'time-function';
+    transition: background-color utils.$colors 'time' utils.$colors 'time-function';
+    transition: border-color utils.$colors 'time' utils.$colors 'time-function';
     &:hover,
     &:focus {
-    color: utils.$white-color;
+    color: utils.$colors 'white-color';
     background-color: transparent;
-    border-color: utils.$white-color;
+    border-color: utils.$colors 'white-color';
 }}
 
 &__button {
@@ -124,15 +124,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:utils.$accent-color;
-    color: utils.$white-color;
+    background-color:utils.$colors 'accent-color';
+    color: utils.$colors 'white-color';
     font-size: 16px;
     cursor: pointer;
     font-family: 'Roboto';
-    transition: background-color utils.$time utils.$time-function;
+    transition: background-color utils.$colors 'time' utils.$colors 'time-function';
     &:hover
     &:focus {
-    background-color: utils.$button-hover;
+    background-color: utils.$colors 'button-hover';
 }}
 
 .send-icon {

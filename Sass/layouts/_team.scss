@@ -1,12 +1,12 @@
 .team{
-    background: utils.$image-background;
+    background: utils.$colors, 'image-background';
         padding-top: 94px;
         padding-bottom: 94px;
 .team__title{
     font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        color: utils.$primary-title-color;
+        color: utils.$colors, 'primary-title-color';
         text-align: center;
         margin-bottom: 50px;
 }
@@ -26,13 +26,13 @@
     padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
-        background-color: utils.$white-color;
+        background-color: utils.$colors, 'white-color';
 }
 .team__item-name{
     font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
-        color: utils.$primary-title-color;
+        color: utils.$colors, 'primary-title-color';
         margin-bottom: 10px;
 }
 .team__item-description{
@@ -54,12 +54,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: utils.$link-color;
-    transition: color utils.$time utils.$time-function;
+    color: utils.$colors, 'link-color';
+    transition: color utils.$colors, 'time' utils.$colors, 'time-function';
     &:hover,
     &:focus {
-    color: utils.$white-color;
-    background-color: utils.$accent-color;
+    color: utils.$colors, 'white-color';
+    background-color: utils.$colors, 'accent-color';
 }}
 
 .team__item-socials-link-icon {
